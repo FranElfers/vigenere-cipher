@@ -1,3 +1,3 @@
 module.exports = {
-  OMMITEDCHARS: ['\n', ' ','\s','\t', '\r', "'", '"']
+  OMITTEDCHARS: ['\n', ' ','\s','\t', '\r', "'", '"', ',']
 }

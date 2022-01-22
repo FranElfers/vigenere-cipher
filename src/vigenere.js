@@ -1,8 +1,8 @@
-const { OMMITEDCHARS } = require('./utils')
+const { OMITTEDCHARS } = require('./utils')
 
 function VigenèreCipher(key, abc) {
   abc = abc.split('')
-  abc = [...abc, ...OMMITEDCHARS]
+  abc = [...abc, ...OMITTEDCHARS]
 
   const process = (str,cipher) => {
     while (key.length < str.length) key += key

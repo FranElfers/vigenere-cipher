@@ -1,4 +1,4 @@
-const { OMMITEDCHARS } = require('./utils');
+const { OMITTEDCHARS } = require('./utils');
 const VigenèreCipher = require("./vigenere")
 const { readFileSync, writeFileSync } = require("fs");
 
@@ -9,7 +9,7 @@ const encode = program => (file, password) => {
   let dictionary = ''
   for (let i = 0; i < data.length; i++) {
     let letter = data[i]
-    if (!dictionary.includes(letter) && !OMMITEDCHARS.includes(letter)) dictionary += letter
+    if (!dictionary.includes(letter) && !OMITTEDCHARS.includes(letter)) dictionary += letter
   }
 
   /** Encryption */
